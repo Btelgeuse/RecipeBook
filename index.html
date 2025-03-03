@@ -10,6 +10,11 @@
   <body>
     <h1>Princess recipe</h1>
     <p>Write down all your delicious meals !</p>
-    <button>Start</button>
+    <button id="start-btn">Start</button>
+
+    <script>
+      const startBtn = document.getElementById("start-btn");
+      startBtn.addEventListener("click", () => {window.electronAPI.loadPage("book.html");})
+    </script>
   </body>
 </html>
